@@ -22,6 +22,12 @@ let content = document.getElementById("content");
  * some information about the clicked element will be displayed.
  */
 function updateContentWithEventObjectTarget(eventObject){
+   content.innerText = eventObject.target;
+   if(target.tagName = 'A'){
+    content.innerText = target.href;
+   } else {
+    content.innerText = target.toString();
+   }
     // code here
 }
 
